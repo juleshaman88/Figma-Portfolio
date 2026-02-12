@@ -14,15 +14,16 @@
 }
 
 body{
-    max-width: 1280px;
-    max-height: 700px;
+    width: 1280px;
+    height: 700px;
+    margin: auto;
     font-family: 'Raleway', serif;
     color: var(--text-color);
     background-color: var(--bg-color);
     line-height: 24px;
 }
 
-.site-header{
+header{
     background-color: var(--primary-color);
     color: var(--text-color);
     font-family: 'IBM Plex Mono', serif;
@@ -63,6 +64,9 @@ body{
 main{
     align-items: center;
     justify-content: center;
+    background-color: var(--bg-color);
+    height: 700px;
+    width: 1280px;
 }
 
 .col50{
@@ -105,9 +109,7 @@ h1{
     padding: 21px 64px;
     font-family: 'IBM Plex Mono', serif;
     font-size: 16px;
-    line-height: 100%;
     font-weight: 700;
-    font-style: bold;
     gap: 10px;
     margin-top: 30px;
     color: white;
@@ -115,10 +117,18 @@ h1{
     box-shadow: 0 8px 30px 0 rgba(98, 186, 27, 0.5) ;
 }
 
+.carrot{
+    margin-left: 10px;
+}
+
 .worked-content{
     display: flex;
     margin-bottom: 20px;
     margin-left: 180px;
+    font-family: 'IBM Plex Mono' serif;
+    font-weight: 400;
+    size: 14px;
+    margin-top: 95px;
 }
 
 .worked-with{
@@ -129,6 +139,9 @@ h1{
 }
 
 .worked-with a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 60px;
     width: 160px;
     border: 1px solid var(--text-color);
@@ -137,7 +150,8 @@ h1{
 
 .worked-with a .logo{
     opacity: 30%;
-    width: 87px;
-    height: 14px;
-    
+    max-width: 100px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
 }
